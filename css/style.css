@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c9bfbf;
+  line-height: 1.5rem;
+}
+
+body {
+  width: 100vw;
+  background-color: #290000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  width: 100vw;
+  background-color: #1b0000;
+  font-size: 1.4rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  min-width: 0.8rem;
+}
+
+.spotlight {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  min-height: calc(100vh - 8vh);
+  width: 100vw;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+#home {
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem;
+  height: 68vh;
+  width: 100vw;
+  background-image: url(../img/blackwall.jpg);
+  background-size: cover;
+  font-weight: 700;
+}
+
+.aboutme div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 225px;
+  flex-wrap: wrap;
+}
+
+.aboutme :nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#hello {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+img {
+  height: 32vh;
+  border-radius: 3rem;
+}
+
+button {
+  padding: 1.2rem 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: #290000;
+  border-radius: 1.8rem;
+}
+
+.cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24vh;
+  width: 100vw;
+}
+
+.download {
+  background-color: #c9bfbf;
+}
+
+.download a {
+  color: #290000;
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.textbubble {
+  background-color: #c9bfbf;
+  color: #290000;
+  padding: 1.8rem 2rem;
+  border-radius: 5rem;
+}
+
+.textbubble h2 {
+  color: #290000;
+}
+
+.textbubble p {
+  line-height: 2rem;
+  color: #290000;
+}
+
+.textbubble p strong {
+  color: #290000;
+}
+
+.projects {
+  justify-content: space-evenly;
+}
+
+footer {
+  font-size: 1.3rem;
+  padding: 2rem 2rem;
+  background-color: #1b0000;
+}
+
+#contact {
+  display: flex;
+  gap: 4rem;
+}
