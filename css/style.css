@@ -29,6 +29,13 @@ nav ul {
   list-style: none;
 }
 
+@media (max-width: 450px) {
+  nav ul {
+    font-size: 1rem;
+    gap: 1.4rem;
+  }
+}
+
 a {
   text-decoration: none;
   min-width: 0.8rem;
@@ -41,15 +48,15 @@ a {
 
 main {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1.4rem;
   min-height: calc(100vh - 8vh);
   width: 100vw;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 2rem;
 }
 
 #home {
-  flex-direction: column;
   margin: 0;
   padding: 0;
   gap: 0;
@@ -58,13 +65,18 @@ main {
 .aboutme {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 4rem;
   height: 68vh;
   width: 100vw;
   background-image: url(../img/blackwall.jpg);
   background-size: cover;
-  font-weight: 700;
+}
+
+@media (max-width: 625px) {
+  .aboutme {
+    flex-direction: column;
+    padding: 1rem;
+  }
 }
 
 .aboutme div {
@@ -76,20 +88,30 @@ main {
   flex-wrap: wrap;
 }
 
+h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+h2 {
+  line-height: 2rem;
+}
+
 .aboutme :nth-child(2) {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-#hello {
-  font-size: 5rem;
-  line-height: 6rem;
-}
-
-img {
+#portrait {
   height: 32vh;
   border-radius: 3rem;
+}
+
+@media (max-width: 625px) {
+  #portrait {
+    height: 20vh;
+  }
 }
 
 button {
@@ -98,6 +120,13 @@ button {
   font-weight: 700;
   background-color: #290000;
   border-radius: 1.8rem;
+}
+
+@media (max-width: 500px) {
+  button {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
 }
 
 .cv {
@@ -116,34 +145,89 @@ button {
   color: #290000;
 }
 
-main > div {
+@media (min-width: 800px) {
+  #aboutmemain {
+    flex-direction: row;
+  }
+}
+
+.aboutmebubbles {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: 1rem;
 }
 
 .textbubble {
-  background-color: #c9bfbf;
+  align-self: flex-start;
+  background-color: rgb(201, 191, 191, 0.7);
   color: #290000;
   padding: 1.8rem 2rem;
   border-radius: 5rem;
 }
 
-.textbubble h2 {
+@media (max-width: 1000px) {
+  .textbubble {
+    align-self: center;
+  }
+}
+
+.textbubble h3,
+.textbubble p,
+.textbubble p strong,
+.textbubble a {
   color: #290000;
 }
 
 .textbubble p {
   line-height: 2rem;
-  color: #290000;
 }
 
-.textbubble p strong {
-  color: #290000;
+#surf {
+  display: flex;
+  height: 70vh;
+  border-radius: 2rem;
 }
 
-.projects {
-  justify-content: space-evenly;
+#portfoliomain div {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  #portfoliomain div {
+      flex-direction: column;
+  }
+}
+
+#portfoliomain div section:hover {
+  box-shadow: 5px 5px 5px 5px #c9bfbf;
+}
+
+div .projectbubble {
+  width: 25vw;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  div .projectbubble {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 700px) {
+  div .projectbubble {
+    width: 70vw;
+  }
+}
+
+.projectimg {
+  width: 20vw;
+  border-radius: 3rem;
+}
+
+#portfoliomain a {
+  align-self: center;
 }
 
 footer {
@@ -152,7 +236,19 @@ footer {
   background-color: #1b0000;
 }
 
+@media (max-width: 625px) {
+  footer {
+    font-size: 0.7rem;
+  }
+}
+
 #contact {
   display: flex;
   gap: 4rem;
+}
+
+@media (max-width: 625px) {
+  #contact {
+    gap: 1rem;
+  }
 }
